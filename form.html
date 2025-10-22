@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+        <nav id="навигация">
+            <div class="div__header">
+                <a class="nav__link" href="index.html" >Обо мне</a>
+            </div>
+            <!-- <div class="div__header">
+                <a class="nav__link" href="Артдирство.html">Артдирство</a>
+            </div> -->
+            <div class="div__header">
+                <a class="nav__link" href="Веб-дизайн.html">Веб-дизайн</a>
+            </div>   
+            <div class="div__header">
+                <a  href="form.html" style="font-size: 25px; color: #282828; text-decoration: none;">Оставить заявку</a>
+            </div>   
+            <div class="div__header">
+                <a class="nav__link" href="Задание1.html">Задание 1</a>
+            </div> 
+            <div class="div__header">
+                <a class="nav__link" href="Задание2.html">Задание 2</a>
+            </div> 
+            <!-- <div class="div__header">
+                <a class="nav__link" href="Графический дизайн.html">Графический дизайн</a>
+            </div> -->
+        </nav>
+
+        <div id="line" style="height: 1.5px; background-color: #999999;"></div>
+    </header>
+<br>
+    <form action="https://www.ya.ru/search?" target="_blank">
+        <fieldset>
+            <br>
+            <legend>Ваши личые данные</legend>
+            <label>
+                Введите ваше имя
+                <input required type="text" name="name">
+            </label>
+            <br>
+            <br>
+            <Label>
+                Введите ваше номер телефона
+                <input required type="tel" name="tel">
+            </Label>
+            <br>
+            <br>
+            <label>
+                Введите вашу почту
+                <input required type="email" name="email">
+            </label>
+            <br>
+            <br>
+            <label for="">
+                Введите ваш ник в Telegram (это поле необязательно)
+                <input type="text" value="@" name="nik">
+            </label>
+            <br>
+            <br>
+            <label>
+                Выберите дату заполнения формы
+                <input required type="date" name="date">
+            </label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Расскажите о вашем заказе</legend>
+            <Label>
+                Какой тип услуг вас интересует:
+                <br>
+                <input type="checkbox" name="sitemaket"> Вёрстка дизайна
+                <br>
+                <input type="checkbox" name="website"> Перенос дизайна сайта в браузер
+                <br>
+                <input type="checkbox" name="graph"> Создание графики для соц.сетей
+                <br>
+                <input type="checkbox" name="advertise"> Создание рекламного постера
+                <br>
+            </Label>
+            <br>
+            <Label>
+                Ваши пожелания:
+                <textarea name="" id="" cols="30" rows="5" name="message"></textarea>
+            </Label>
+            <br>
+            <br>
+            <Label>Покажите референсы, если они есть
+                <input type="file" name="file">
+            </Label>
+            <br>
+            <br>
+            <label>
+                Как вы узнали обо мне?
+                <br>
+                <input required type="radio" name="radio1"> Порекомендовали знакомые
+                <br>
+                <input required type="radio" name="radio1"> Через соц.сети
+                <br>
+                <input required type="radio" name="radio1"> Просто наткнулся на сайт
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <button type="submit">Отправить данные</button>
+            <button type="reset">Очистить форму</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
